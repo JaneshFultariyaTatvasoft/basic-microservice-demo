@@ -6,13 +6,17 @@ Basic MicroService architecture in Spring boot
 	Apache Maven 3.9.6
 	MYSQL Version 8.3.0+
 
+Start MYSQL server locally with username "root" and password "root"
+
+Add MYSQL DB as "auth-db"
+
 After installing required software run below projects in a sequence
 
-- Start "serviceregistry" project using below command
+- Start "serviceregistry" project in "serviceregistry" folder using below command
 	mvn spring-boot:run
-- Start "authservice" project using below command
+- Start "authservice" project in "authservice" folder using below command
 	mvn spring-boot:run
-- Start "userservice" project using below command	
+- Start "userservice" project in "userservice" folder using below command	
 	mvn spring-boot:run
-- Start "gateway" project using below command
+- Start "gateway" project in "gateway" folder using below command
 	mvn spring-boot:run
