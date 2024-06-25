@@ -1,10 +1,10 @@
 Basic MicroService architecture in Spring boot
 
 - Prerequisite
-	Java 17+
-	Eclipse/STS IDE
-	Apache Maven 3.9.6
-	MYSQL Version 8.3.0+
+	- Java 17+
+	- Eclipse/STS IDE
+	- Apache Maven 3.9.6
+	- MYSQL Version 8.3.0+
 
 Start MYSQL server locally with username "root" and password "root"
 
