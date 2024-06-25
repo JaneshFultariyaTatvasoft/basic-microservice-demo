@@ -20,3 +20,8 @@ After installing required softwares run below projects in a sequence
 	- _mvn spring-boot:run_
 - Start "gateway" project in "gateway" folder using below command
 	- _mvn spring-boot:run_
+
+References:
+- https://www.youtube.com/watch?v=_PQd6aZ-ANk
+- https://www.baeldung.com/spring-cloud-netflix-eureka
+- https://www.codejava.net/frameworks/spring/understand-spring-data-jpa-with-simple-example
