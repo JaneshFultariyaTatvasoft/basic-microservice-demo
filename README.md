@@ -10,13 +10,13 @@ Start MYSQL server locally with username "root" and password "root"
 
 Add MYSQL DB as "auth-db"
 
-After installing required software run below projects in a sequence
+After installing required softwares run below projects in a sequence
 
 - Start "serviceregistry" project in "serviceregistry" folder using below command
-	mvn spring-boot:run
+	- _mvn spring-boot:run_
 - Start "authservice" project in "authservice" folder using below command
-	mvn spring-boot:run
+	- _mvn spring-boot:run_
 - Start "userservice" project in "userservice" folder using below command	
-	mvn spring-boot:run
+	- _mvn spring-boot:run_
 - Start "gateway" project in "gateway" folder using below command
-	mvn spring-boot:run
+	- _mvn spring-boot:run_
