@@ -1,0 +1,44 @@
+version: '4.28'
+
+services:
+
+  serviceregistry:
+    build: .
+    image: serviceregistry:latest
+    restart: on-failure
+
+  gateway:
+    build: ../gateway
+    restart: on-failure
+    ports:
+      - 9000:9000
+
+  authservice:
+    build: ../authservice
+    container_name: auth-service
+    restart: on-failure
+    environment:
+      MYSQL_HOST: db
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: userservice
+      MYSQL_PORT: 3306
+
+  userservice:
+    build: ../userservice
+    restart: on-failure
+    environment:
+      MYSQL_HOST: db
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: userservice
+      MYSQL_USER: root
+      MYSQL_PORT: 3306
+
+  db:
+    image: mysql:latest
+    restart: on-failure
+    environment:
+      MYSQL_DATABASE: userservice
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - D:/Goals/Java/user-data:/var/lib/mysql

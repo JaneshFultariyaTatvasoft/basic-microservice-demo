@@ -1,0 +1,9 @@
+version: "4.28"
+
+services:
+  app:
+    build: .
+    image: apigatewaydemo
+    restart: on-failure
+    ports:
+      - 9000:9000
