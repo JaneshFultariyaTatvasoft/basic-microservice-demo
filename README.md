@@ -11,7 +11,10 @@ Start MYSQL server locally with username "root" and password "root"
 
 Add MYSQL DB as "auth-db"
 
-After installing required softwares run below projects in a sequence
+Clone the projects using below git command <br/><br/>
+_git clone https://github.com/JaneshFultariyaTatvasoft/basic-microservice-demo.git_
+
+After installing required softwares and cloning projects run below projects in a sequence
 
 - Start "serviceregistry" project in "serviceregistry" folder using below command
 	- _mvn spring-boot:run_
