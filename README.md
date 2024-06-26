@@ -1,6 +1,7 @@
 Basic MicroService architecture in Spring boot
 
 - Prerequisite
+  	- Git - https://git-scm.com/download/win
 	- Java 17+ - https://corretto.aws/downloads/latest/amazon-corretto-17-x64-windows-jdk.msi
 	- Eclipse/STS IDE - https://spring.io/tools
 	- Apache Maven 3.9.6 - https://maven.apache.org/download.cgi
