@@ -6,6 +6,7 @@ import com.example.userservice.entity.ResetPassword;
 import com.example.userservice.entity.User;
 import com.example.userservice.repository.ResetPasswordRepository;
 import com.example.userservice.repository.UserRepository;
+import java.security.SecureRandom;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -56,7 +57,7 @@ public class UserController {
     public ResponseEntity<?> forgotPassword(@RequestBody UserRequestDto dto) {
         Optional<User> userOptl = userRepository.findByEmail(dto.getEmail());
         if (userOptl.isPresent()) {
-            Random random = new Random();
+            Random random = new SecureRandom();
             String token = "";
             for (int i = 0; i < 4; i++) {
                 token += random.nextInt(9);
